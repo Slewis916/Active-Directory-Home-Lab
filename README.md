@@ -40,7 +40,13 @@ Screenshots are available in the `/screenshots` folder:
 Detailed notes and reference material are located in `/docs`.
 
 ## What I Learned
-- How domains centralize authentication and access control
+- How Active Directory centralizes authentication and access control
 - How DHCP assigns IP addresses to client machines
 - How NAT can allow internal clients to reach the internet through a controlled gateway
 - How to validate and troubleshoot connectivity between systems
+
+## Future Improvements
+- Implement Group Policy Objects (GPOs) for security and user configuration
+- Add additional domain-joined client machines
+- Configure file shares with NTFS permissions
+- Introduce basic monitoring or logging
