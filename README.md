@@ -29,7 +29,7 @@ This project documents a small “mini-corporation” Active Directory lab built
 
 ## Validation / Evidence
 Screenshots are available in the `/screenshots` folder:
-- ![VirtualBox overview DC01 and CLIENT1](screenshots/01-VirtualBox-overview.png)
+- VirtualBox overview DC01 and CLIENT1 ![VirtualBox overview DC01 and CLIENT1](screenshots/01-VirtualBox-overview.png)
 - ![AD Users & Computers showing created users](screenshots/02-AD-Users-and-computers.png)
 - ![DHCP scope configuration](screenshots/03-DHCP-scope.png)
 - ![RRAS/NAT configuration](screenshots/06-RRAS:NAT.png)
