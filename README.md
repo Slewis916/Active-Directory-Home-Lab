@@ -29,12 +29,12 @@ This project documents a small “mini-corporation” Active Directory lab built
 
 ## Validation / Evidence
 Screenshots are available in the `/screenshots` folder:
-- ![VirtualBox overview (DC + CLIENT1)](Active-Directory-Home-Lab/AD screenshots/01-VirtualBox-overview.png)
-- AD Users & Computers showing created users 
-- DHCP scope configuration
-- RRAS/NAT configuration
-- CLIENT1 domain join confirmation
-- CLIENT1 `ipconfig` output
+- ![VirtualBox overview (DC + CLIENT1)](ADscreenshots/01-VirtualBox-overview.png)
+- ![AD Users & Computers showing created users](ADscreenshots/02-AD-Users-and-computers.png)
+- ![DHCP scope configuration](ADscreenshots/03-DHCP-scope.png)
+- ![RRAS/NAT configuration](ADscreenshots/06-RRAS:NAT.png)
+- ![CLIENT1 domain join confirmation](ADscreenshots/04-client-domain-join.png)
+- ![CLIENT1 `ipconfig` output](ADscreenshots/05-ipconfig-validation.png)
 
 ## Notes
 Detailed notes and reference material are located in `/docs`.
