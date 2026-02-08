@@ -29,8 +29,8 @@ This project documents a small “mini-corporation” Active Directory lab built
 
 ## Validation / Evidence
 Screenshots are available in the `/screenshots` folder:
-- VirtualBox overview (DC + CLIENT1)
-- AD Users & Computers showing created users
+- ![VirtualBox overview (DC + CLIENT1)](Active-Directory-Home-Lab/AD screenshots/01-VirtualBox-overview.png)
+- AD Users & Computers showing created users 
 - DHCP scope configuration
 - RRAS/NAT configuration
 - CLIENT1 domain join confirmation
