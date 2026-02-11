@@ -26,6 +26,8 @@ This project documents a small “mini-corporation” Active Directory lab built
 5. Configure DHCP scope
 6. Create domain users (PowerShell)
 7. Join CLIENT1 to the domain and validate access
+8. Create and apply Group Policy Objects (GPOs) for security and access control
+9. Validate drive mapping and permissions on CLIENT1
 
 ## Validation / Evidence
 Screenshots are available in the `/screenshots` folder:
@@ -35,6 +37,12 @@ Screenshots are available in the `/screenshots` folder:
 - RRAS/NAT configuration ![RRAS/NAT configuration](screenshots/06-RRAS:NAT.png)
 - CLIENT1 domain join confirmation ![CLIENT1 domain join confirmation](screenshots/04-client-domain-join.png)
 - CLIENT1 `ipconfig` output ![CLIENT1 `ipconfig` output](screenshots/05-ipconfig-validation.png)
+- NTFS permissions applied to shared folder ![NTFS permissions applied to shared folder](screenshots/07-ntfs%20permissions.png)
+- Group Policy drive mapping configuration ![Group Policy drive mapping configuration](screenshots/08-Drive-mapping-config.png)
+- Mapped network drive visible on CLIENT1 ![Mapped network drive visible on CLIENT1](screenshots/09-client1-validation.png)
+- Group Policy Account Lockout Policy configuration ![Group Policy Account Lockout Policy configuration](screenshots/10-account-lockout.png)
+- Group Policy disabling USB storage on domain-joined workstations ![GGroup Policy disabling USB storage on domain-joined workstations ](screenshots/11-disable-storage-devices.png)
+
 
 ## Notes
 Detailed notes and reference material are located in `/docs`.
@@ -44,9 +52,30 @@ Detailed notes and reference material are located in `/docs`.
 - How DHCP assigns IP addresses to client machines
 - How NAT can allow internal clients to reach the internet through a controlled gateway
 - How to validate and troubleshoot connectivity between systems
+- 
+## Recent Enhancements
+The lab was extended to include enterprise-style access control and user policy management:
+- Implemented Group Policy Objects (GPOs) for:
+  - Password policy enforcement
+  - Account lockout policy
+  - Network drive mapping using Group Policy Preferences
+- Created and secured a shared network folder (`CompanyData`)
+- Applied NTFS permissions following least-privilege access principles
+- Validated successful GPO application on domain-joined client systems
+- Configured Account Lockout Policy via Group Policy to mitigate brute-force login attempts
 
-## Future Improvements
-- Implement Group Policy Objects (GPOs) for security and user configuration
-- Add additional domain-joined client machines
-- Configure file shares with NTFS permissions
-- Introduce basic monitoring or logging
+
+## Future Enhancements
+- Create role-based access control using security groups
+- Expand monitoring and logging for authentication and policy enforcement events
+
+## Skills Demonstrated
+- Windows Server 2022 administration
+- Active Directory Domain Services (AD DS)
+- Group Policy Object (GPO) management
+- DHCP and internal network configuration
+- NTFS permissions and access control
+- Domain-joined client troubleshooting
+- Enterprise-style user and resource management
+
+
