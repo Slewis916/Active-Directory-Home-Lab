@@ -65,7 +65,6 @@ Detailed notes and reference material are located in `/docs`.
 The lab was extended to include enterprise-style access control and user policy management:
 - Implemented Group Policy Objects (GPOs) for:
   - Password policy enforcement
-  - Account lockout policy
   - Network drive mapping using Group Policy Preferences
 - Created and secured a shared network folder (`CompanyData`)
 - Applied NTFS permissions following least-privilege access principles
