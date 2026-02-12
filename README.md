@@ -1,7 +1,7 @@
 # Active Directory Home Lab (Windows Server 2022)
 
 ## Overview
-This project documents a small “mini-corporation” Active Directory lab built in Oracle VirtualBox to practice Windows Server administration and basic enterprise networking.
+This repository demonstrates an enterprise-style Windows Active Directory environment built in a home lab to practice real-world systems administration skills relevant to IT Specialist and SysAdmin roles.
 
 ## Lab Goals
 - Build a Windows Server 2022 Domain Controller
@@ -12,11 +12,17 @@ This project documents a small “mini-corporation” Active Directory lab built
 - Join a Windows 10 client to the domain
 - Create domain users using a PowerShell script to practice administrative automation (script not authored by me)
 
-## Environment
-- Host: (your PC)
-- Virtualization: Oracle VirtualBox
-- Server: Windows Server 2022 (Domain Controller)
-- Client: Windows 10 (CLIENT1)
+## Tools & Technologies
+
+- Oracle VirtualBox (Virtualization)
+- Windows Server 2022
+- Active Directory Domain Services (AD DS)
+- Group Policy Management (GPO)
+- DHCP
+- NTFS Permissions
+- Windows 10 (Domain-Joined Client)
+- PowerShell (User Provisioning Script)
+
 
 ## High-Level Steps
 1. Install Windows Server 2022 and configure as Domain Controller
@@ -28,6 +34,8 @@ This project documents a small “mini-corporation” Active Directory lab built
 7. Join CLIENT1 to the domain and validate access
 8. Create and apply Group Policy Objects (GPOs) for security and access control
 9. Validate drive mapping and permissions on CLIENT1
+
+
 
 ## Validation / Evidence
 Screenshots are available in the `/screenshots` folder:
@@ -41,7 +49,7 @@ Screenshots are available in the `/screenshots` folder:
 - Group Policy drive mapping configuration ![Group Policy drive mapping configuration](screenshots/08-Drive-mapping-config.png)
 - Mapped network drive visible on CLIENT1 ![Mapped network drive visible on CLIENT1](screenshots/09-client1-validation.png)
 - Group Policy Account Lockout Policy configuration ![Group Policy Account Lockout Policy configuration](screenshots/10-account-lockout.png)
-- Group Policy disabling USB storage on domain-joined workstations ![GGroup Policy disabling USB storage on domain-joined workstations ](screenshots/11-disable-storage-devices.png)
+- Group Policy disabling USB storage on domain-joined workstations ![Group Policy disabling USB storage on domain-joined workstations ](screenshots/11-disable-storage-devices.png)
 
 
 ## Notes
@@ -52,7 +60,7 @@ Detailed notes and reference material are located in `/docs`.
 - How DHCP assigns IP addresses to client machines
 - How NAT can allow internal clients to reach the internet through a controlled gateway
 - How to validate and troubleshoot connectivity between systems
-- 
+  
 ## Recent Enhancements
 The lab was extended to include enterprise-style access control and user policy management:
 - Implemented Group Policy Objects (GPOs) for:
