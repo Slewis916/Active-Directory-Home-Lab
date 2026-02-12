@@ -51,10 +51,6 @@ Screenshots are available in the `/screenshots` folder:
 - Group Policy Account Lockout Policy configuration ![Group Policy Account Lockout Policy configuration](screenshots/10-account-lockout.png)
 - Group Policy disabling USB storage on domain-joined workstations ![Group Policy disabling USB storage on domain-joined workstations ](screenshots/11-disable-storage-devices.png)
 
-
-## Notes
-Detailed notes and reference material are located in `/docs`.
-
 ## What I Learned
 - How Active Directory centralizes authentication and access control
 - How DHCP assigns IP addresses to client machines
