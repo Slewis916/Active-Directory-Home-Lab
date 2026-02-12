@@ -52,10 +52,12 @@ Screenshots are available in the `/screenshots` folder:
 - Group Policy disabling USB storage on domain-joined workstations ![Group Policy disabling USB storage on domain-joined workstations ](screenshots/11-disable-storage-devices.png)
 
 ## What I Learned
-- How Active Directory centralizes authentication and access control
-- How DHCP assigns IP addresses to client machines
-- How NAT can allow internal clients to reach the internet through a controlled gateway
-- How to validate and troubleshoot connectivity between systems
+
+- Implementing centralized identity and authentication using Active Directory
+- Enforcing security controls through Group Policy
+- Applying least-privilege access control using NTFS permissions
+- Troubleshooting DNS, connectivity, and policy application issues
+
   
 ## Recent Enhancements
 The lab was extended to include enterprise-style access control and user policy management:
